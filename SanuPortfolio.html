@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+    color: #2c3e50;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #2c3e50;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Home Section */
+#home {
+    background-color: #3498db;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+/* About Me Section */
+#about {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#about p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+/* Projects Section */
+#projects {
+    background-color: #ecf0f1;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project {
+    flex: 0 0 45%;
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+.project h3 {
+    margin: 10px 0;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+ul{
+    text-align: left;
+}
+
+    </style>
+    <script>
+        // Contact Form Submission (Basic Example)
+document.getElementById('contact-form').addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent page reload on form submission
+    alert("Thank you for your message! I'll get back to you soon.");
+    // You can add code here to send the form data to an email server, etc.
+});
+
+    </script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="hero">
+            <h1>Sanu Kumar Portfolio</h1>
+            <p>I'm a passionate Front-end developer</p>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2 >About Me</h2>
+        <p>Hi, I’m Sanu Kumar. I specialize in building beautiful, responsive websites and web applications using React js,Next js,JavaScript,Tailwind CSS,HTML.</p>
+        <p>With a deep interest in front-end development and a focus on creating seamless user experiences, I am always learning and evolving with the latest technologies.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <h2 style="text-align: center;background-color: #ecf0f1;margin:0;padding-top:30px">Projects</h2>
+    <section id="projects">
+        
+        <div class="project">
+            <h3>1.Omantel</h3>
+            <p>Developed the web-based application using React, Next Js, TypeScript ,Contentful CMS and other Front End technology with VTEX as Bakend CMS Tool.</p>
+            <ul>
+                <li>Have worked on Google Tag Manager Implementation, Seo implementation in NextJs.</li>
+                <li>Have worked on Creating Dynamic sitemap for all the link available in the application.</li>
+                <li>Have worked on authentication process implementation using AWS Amplify in React Js.</li>
+                <li>Have worked on implementation of product purchase flow.</li>
+                <li>Have worked on Raiting and reviewing of products and seller.</li>
+                <li>Have worked on generating dynamic HTML template with the Api data from CMS</li>
+            </ul>
+        </div>
+        <div class="project">
+            <h3>2.PUMA</h3>
+            <p>Developed the web-based application using React ,HTML, CSS, JavaScript, SFCC.</p>
+            <ul>
+                <li>Have worked on new CR as implementation of promotion banner</li>
+                <li>Have worked on form validation for multiple country with different language.</li>
+                <li>Have worked on implementation of third party library with taking considration of all the security policy by the client</li>
+            </ul>
+        </div>
+        <div class="project">
+            <h3>3.Vodafone Vhub</h3>
+            <p>Developed the web-based application using React ,HTML, CSS, JavaScript, Contentful CMS.</p>
+            <ul>
+                <li>Have worked on implementation of E-learnig video.</li>
+                <li>Have used pre-defined component provided by vodafone to develop the react application.</li>
+                <li>Have worked on implementation of multi-Level self review flow</li>
+                <li>Have worked on implementation of dyanmic question answer sheet with option fetching values from Api and submit the value.</li>
+            </ul>
+        </div>
+        <div class="project">
+            <h3>4.physicianpromise.com</h3>
+            <p>Developed the web-based application using React ,HTML, CSS, JavaScript with Drupal as BackEnd.</p>
+            <ul>
+                <li>Have worked on implementation of taking appoinment of doctors.</li>
+                <li>Have worked upon implementation of customer reviewing of doctor.</li>
+                <li>Have worked on implementation of multi-Level self review flow of a patient with option for their problems</li>
+            </ul>
+        </div>
+        <div class="project">
+            <h3>5.pfizer Projects</h3>
+            <p>Developed the responsive websites and web applications using React ,Vue ,Pfizer Static site builder ,Hugo js ,HTML, CSS, JavaScript with Drupal as BackEnd.</p>
+            <ul>
+                <li>helix.pfizer.com(Pfizer Internal Developer portal)</li>
+                <li>www.pfizerpro.com/product/lorbrena/hcp</li>
+                <li>eucrisa.com</li>
+                <li>vizimpro.com</li>
+                <li>advil.au , etc..</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div>
+            <p>Name : Sanu Kumar</p>
+            <p>email : sanu03071996@gmail.com</p>
+            <p>Contact no. : 8095894302</p>
+            <p>Address : HSR Bengaluru</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Sanu Kumar. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
